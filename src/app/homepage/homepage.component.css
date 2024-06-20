@@ -1,0 +1,130 @@
+
+.home {
+  text-align: center;
+  padding: 2rem;
+  width: 1000px;
+  height: 628.51px;
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  left: 15rem;
+  background-image: url(/images/background.svg); 
+  background-size: cover;
+  background-position: center;
+  z-index: 4;
+}
+
+.selection {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  position: relative;
+  z-index: 2; 
+}
+
+.option {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 403px;
+  height: 334px;
+  text-align: center;
+  position: relative;
+  background-color: white; 
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  z-index: 2; 
+}
+
+.option.selected {
+  border-color: #9A7BF0;
+  background-color: #E8DFF9; 
+}
+
+.option img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+}
+
+button {
+  margin-top: 2rem;
+  padding: 0.5rem 2rem;
+  background-color: #313280;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  z-index: 2; 
+}
+
+button:hover {
+  background-color: #9A7BF0;;
+}
+
+a {
+  color: #9A7BF0;
+  text-decoration: none;
+}
+
+.radio-button {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+}
+
+.radio-button input[type="radio"] {
+  display: none;
+}
+
+.radio-button label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #9A7BF0;
+  border-radius: 50%;
+}
+
+.radio-button input[type="radio"]:checked + label {
+  background-color: #9A7BF0;
+}
+
+.home-title, .home-p {
+  color: #313280;
+}
+
+.home-link {
+  color: #121213;
+  font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+  .home {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: -1rem;
+    box-sizing: border-box;
+  }
+
+  .selection {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .option {
+    width: 100%;
+    height: auto;
+  }
+
+  button {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 1.5rem;
+  }
+}

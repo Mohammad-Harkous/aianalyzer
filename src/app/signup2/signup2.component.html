@@ -1,0 +1,35 @@
+
+<app-navbar/>
+ <div class="home">
+    <h1 class="home-title">AI Analyzer</h1>
+    <p class="home-p">
+        Lorem ipsum dolor sit amet consectetur. <br>
+        Enim sem commodo egestas turpis egestas quam.
+    </p>
+    <div class="selection">
+      <div class="option" [ngClass]="{'selected': selectedOption === 'startup'}">
+        <div class="radio-button">
+          <input type="radio" id="startup" name="option" [(ngModel)]="selectedOption" value="startup">
+          <label for="startup"></label>
+        </div>
+        <h2>Startup</h2>
+        <p>Lorem ipsum dolor sit amet consectetur vitae purus vel leo lobortis lectus venenatis enim id tortor.</p>
+        <img src="/images/image_1.svg" alt="Startup">
+      </div>
+      <div class="option" [ngClass]="{'selected': selectedOption === 'investor'}">
+        <div class="radio-button">
+          <input type="radio" id="investor" name="option" [(ngModel)]="selectedOption" value="investor">
+          <label for="investor"></label>
+        </div>
+        <h2>Investor</h2>
+        <p>Lorem ipsum dolor sit amet consectetur vitae purus vel leo lobortis lectus venenatis enim id tortor.</p>
+        <img src="/images/image_2.svg" alt="Investor">
+      </div>
+    </div>
+  
+     <a href="signup">
+      <button >Join as a Startup</button>
+    </a>
+    <p class="home-link">Already have an account? <a href="#">Log In</a></p>
+  </div>
+  
